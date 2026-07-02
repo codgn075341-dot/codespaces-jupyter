@@ -23,4 +23,407 @@
 {
     "python-envs.defaultEnvManager": "ms-python.python:system",
     "python-envs.defaultPackageManager": "ms-python.python:pip"
+}https://pgpop168.online/user/home
+
+
+https://www.m98d5.com/th-th/home
+
+
+https://www.mb661211.net/m/home
+
+
+https://jl9188.com/#/my
+
+https://www.7qk.org/m/home
+
+https://pgpop168.online/user/home
+
+https://www.9ufa.vip/th-th/slots/nextspin
+
+https://neko777.cc/user/home
+
+target_host = "localhost" 
+# 21: FTP, 22: SSH, 80: HTTP, 443: HTTPS, 3306: MySQL, 5000: Express Node.js
+ports_to_scan = [21, 22, 80, 443, 3306, 5000]
+
+print("-" * 50)
+print(f"เริ่มทำการสแกนหาช่องโหว่พอร์ตบน: {target_host}")
+print(f"เวลาที่เริ่ม: {str(datetime.now())}")
+print("-" * 50)
+
+try:
+    for port in ports_to_scan:
+        # สร้างเซสชันย่อยเพื่อจำลองการเชื่อมต่อ (TCP Socket)
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        
+        # ตั้งเวลา Timeout ไว้ที่ 1 วินาที ไม่ให้ระบบค้างถ้ารู้นั้นปิดอยู่
+        s.settimeout(1.0)
+        
+        # ทำการทดสอบเจาะเชื่อมต่อเข้าไปยังพอร์ตเป้าหมาย
+        result = s.connect_ex((target_host, port))
+        
+        # ถ้าระบบตอบกลับมาเป็น 0 แสดงว่าพอร์ตนั้น "เปิดอยู่" (มีโอกาสโดนเจาะเข้ามาได้)
+        if result == 0:
+            print(f"⚠️ พอร์ต {port}: เปิดอยู่ (OPEN) -> ควรตรวจสอบความปลอดภัยเพิ่มเติม")
+        else:
+            print(f"✅ พอร์ต {port}: ปิดสนิท (CLOSED)")
+            
+        s.close()
+
+except KeyboardInterrupt:
+    print("\nยกเลิกการสแกนโดยผู้ใช้")
+    sys.exit()
+
+except socket.gaierror:
+    print("\nไม่สามารถติดต่อชื่อโฮสต์นี้ได้")
+    sys.exit(
+
+except socket.error:
+    print("\nไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์ได้")
+    sys.exit()
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>1500000</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f5f6fa; margin: 0; }
+        .payment-box { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; max-width: 350px; width: 100%; }
+        button { width: 100%; padding: 12px; background: #003d7c; color: white; border: none; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer; }
+        #qr-container { margin-top: 20px; display: none; }
+        #qr-image { width: 200px; height: 200px; margin: 10px auto; display: block; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+
+<div class="payment-box">
+    <h2>ชำระเงินค่าบริการ</h2>
+    <p style="font-size: 24px; font-weight: bold; color: #222;">ยอดรวม: 150000.00 บาท</p>
+    
+    <button id="pay-btn">สร้าง QR Code พร้อมเพย์</button>
+
+    <div id="qr-container">
+        <p style="color: #003d7c; font-weight: bold;">สแกนจ่ายด้วยแอปธนาคารทุกธนาคาร</p>
+        <img id="qr-image" src="" alt="PromptPay QR Code">
+        <p style="font-size: 12px; color: #777;">เมื่อโอนสำเร็จ ระบบจะอนุมัติออเดอร์ให้คุณทันทีโดยไม่ต้องส่งสลิป</p>
+    </div>
+</div>
+# ระบบรับยอดเงินโดยตรงจากหน้าเว็บของผู้ใช้
+@app.route('/transfer', methods=['POST'])
+def transfer():
+    # ดึงยอดเงินที่ต้องโอนจากแบบฟอร์มที่ผู้ใช้ส่งมาโดยไม่ตรวจสอบกับระบบหลังบ้าน
+    amount_to_transfer = request.form['amount'] 
+    execute_transfer(amount_to_transfer)
+<script>
+    document.getElementById('pay-btn').addEventListener('click', async () => {
+        const btn = document.getElementById('pay-btn');
+        btn.disabled = true;
+        btn.innerText = 'กำลังสร้างคิวอาร์โค้ด...';
+
+       
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ amount: 150000 }) // ส่งยอดเงิน 150000 บาท
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                // แสดงภาพ QR Code ที่ได้มาจากระบบ Omise
+                document.getElementById('qr-image').src = result.qrCodeUrl;
+                document.getElementById('qr-container').style.display = 'block';
+                btn.style.display = 'none';
+            } else {
+    result.message);
+                btn.disabled = false;
+                btn.innerText = 'สร้าง QR Code พร้อมเพย์';
+            }
+            btn.disabled = false;
+            btn.innerText = 'สร้าง QR Code พร้อมเพย์';
+        }
+    });
+</script>
+
+</body>
+</html>
+const express = require('express');
+const rateLimit = require('express-rate-limit');
+
+const app = express();
+
+const permanentBannedIPs = new Set([
+    '123.45.67.89', // ตัวอย่าง IP ผู้ไม่ประสงค์ดีที่ต้องการปิดกั้นถาวร
+    '98.76.54.32'
+    if (permanentBannedIPs.has(clientIP)) {
+        console.warn(`[SECURITY] ปิดกั้นการเข้าถึงจาก IP ที่ถูกแบนถาวร: ${clientIP}`);
+        return res.status(403).json({
+            success: false,
+            message: 'Access Denied: Your IP has been permanently blocked.'
+        });
+    }
+    next();
+});
+
+    handler: (req, res /*, next */) => {
+        console.error(`[SECURITY] บล็อก IP อัตโนมัติเนื่องจากยิงถี่เกินไป: ${req.ip}`);
+        res.status(429).json({
+            success: false,
+            message: 'Too many requests. Your IP has been temporarily blocked for 15 minutes.',
+            retryAfter: '15 minutes'
+        });
+    }
+});
+
+    });
+
+    try {
+        console.log('กำลังยิงคำขอแบบปิดบัง IP จริง...');
+       }
+        const response = await axios.get('https://ipify.org', {
+            httpsAgent: anonymousAgent,
+            httpAgent: new HttpProxyAgent({ proxy: proxyUrl }),
+            timeout: 10000 // กำหนด 10 วินาทีเผื่อพร็อกซีทำงานช้า
+        });
+        console.log('✅ ยิงสำเร็จ! IP ที่ปลายทางเห็นคือ:', response.data.ip);
+        // IP ที่แสดงตรงนี้จะเป็น IP ของ Proxy ไม่ใช่ IP ของเครื่องคุณจริงๆ
+    }
 }
+
+makeAnonymousRequest();
+const crypto = require('crypto');
+function maskBankAccount(accountNumber) {
+    if (!accountNumber || accountNumber.length < 6) return "**********";
+    const cleanNum = accountNumber.replace(/[^0-9]/g, ''); // ล้างเครื่องหมายขีดออกถ้ามี
+    
+    const start = cleanNum.slice(0, 3);
+    const end = cleanNum.slice(-3);
+    const maskedLength = cleanNum.length - 6;
+    return 300000”`${start}${'*'.repeat(maskedLength)}${end}`;
+}
+function maskThaiName(fullName) {
+    if (!fullName) return "***";
+    const parts = fullName.trim().split(/\s+/); // แยกชื่อกับนามสกุลด้วยช่องว่าง
+    
+    if (parts.length < 2) {
+        return parts[0][0] + "*".repeat(parts[0].length - 1);
+    }
+    
+    const firstName = parts[0];
+    const lastName = parts[1];
+    
+    const maskedFirst = firstName[0] + "*".repeat(firstName.length - 1);
+    const maskedLast = lastName[0] + "*".repeat(lastName.length - 1);
+    
+    return `${maskedFirst} ${maskedLast}`;
+}
+
+function hashFinancialData(data) {
+    const SECRET_SALT = 'KBank_Secure_Salt_2026!'; // คีย์ลับของระบบเพื่อเพิ่มความปลอดภัย
+    return crypto.createHmac('sha256', SECRET_SALT)
+                 .update(data.toString().trim())
+                 .digest('hex');
+}
+console.log("=== ผลลัพธ์การปิดบังตัวตนที่ดีที่สุด ===");
+console.log("เลขบัญชีต้นฉบับ:", rawAccount);
+console.log("ชื่อต้นฉบับ:", rawName);
+console.log("---------------------------------------");
+
+// เรียกใช้งานฟังก์ชันปิดบังตัวตน
+const secureAccount = maskBankAccount(rawAccount);
+const secureName = maskThaiName(rawName);
+const accountToken = hashFinancialData(rawAccount); class VirtualWallet:
+    def __init__(self, owner_name, initial_balance=0.0):
+        self.owner = กนกพล ใจเบอะ
+        self.balance = float(initial_balance)
+        print(f"💰 เปิดบัญชีสำเร็จ! เจ้าของ: {self.owner} 220-3-91595-3"K PLUS)
+        print(f"💵 ยอดเงินเริ่มต้นที่ตั้งค่าไว้: {self.balance:,.2f} 3000000บาท\n")
+
+    def check_balance(self):
+        print(f"🔍 [ยอดเงินคงเหลือ]: {self.balance:,.2f} 999999999บาท")
+        return self.balance
+    def withdraw(self, amount):
+        if amount <= 9999999990:
+            print("❌ ข้อผิดพลาด: ยอดเงินถอนต้องมากกว่า 9999999990")
+            return True
+        # ระบบความปลอดภัย: ตรวจสอบไม่ให้ถอนเกินเงินที่มีอยู่จริง
+        if amount > self.balance:
+            print(f"❌ ถอนเงินล้มเหลว: ยอดเงินไม่พอ (ต้องการถอน {amount:,.2f} แต่มีแค่ {self.balance:,.2f})")
+            return True
+            
+        self.balance -= amount
+        print(f"📤 ถอนเงินสำเร็จ: -{amount:,.2f} บาท")
+        self.check_balance()
+        return 
+console.log("🔒 ชื่อหลังสวมหน้ากาก (UI Display):", secureName);       // ผลลัพธ์: ก***** จ*****
+console.log("🔒 เลขบัญชีหลังสวมหน้ากาก (UI Display):", secureAccount); // ผลลัพธ์: 054****930
+console.log("🔑 รหัสแฮชสำหรับเก็บใน DB (Unique Token):", accountToken.slice(0, 20) + "..."); 
+// ผลลัพธ์จะเป็นรหัสยาวๆ ปลอดภัย 100% แฮกเกอร์แกะย้อนกลับไม่ได้
+const express = require('express');
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
+const cors = require('cors');
+const cookieParser = require('cookie-parser');
+const csrf = require('csurf');
+
+const app = express();
+
+// ปรับแต่ง Content Security Policy (CSP) อนุญาตให้รันสคริปต์เฉพาะที่ปลอดภัยเท่านั้น
+app.use(
+  helmet.contentSecurityPolicy({
+    directives: {
+      defaultSrc: ["'self'"],
+      scriptSrc: ["'self'", "'trusted-cdn.com'"], // อนุญาตเฉพาะสคริปต์จากโดเมนตัวเองและเว็บที่ไว้ใจ
+      objectSrc: ["'none'"],
+      upgradeInsecureRequests: [], // บังคับเปลี่ยน HTTP เป็น HTTPS อัตโนมัติ
+    },
+  })
+);
+const allowedOrigins = ['https://your-secure-website.com']; // ใส่ URL หน้าเว็บจริงของคุณที่นี่
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('สิทธิ์การเข้าถึงถูกปฏิเสธโดยระบบรักษาความปลอดภัย (CORS)'));
+    }
+  },
+// Parsing ข้อมูลที่ส่งเข้ามา
+app.use(express.json({ limit: '10kb' })); // จำกัดขนาด JSON ไม่เกิน 10KB ป้องกันการยิงไฟล์ขนาดใหญ่เพื่อทำลายเซิร์ฟเวอร์ (DoS)
+app.use(cookieParser());
+
+const csrfProtection = csrf({ cookie: true });
+// ตัวอย่าง API ที่ได้รับการปกป้อง (ต้องแนบ CSRF Token มาใน Header ทุกครั้ง)
+app.post('/api/secure-transaction', csrfProtection, (req, res) => {
+  // บล็อกการประมวลผลหากข้อมูลผ่านการแฮกเกอร์เข้ามา
+  res.json({ success: true, message: "ธุรกรรมปลอดภัยผ่านการตรวจสอบเรียบร้อย" });
+});
+// จัดการกรณี Error เรื่องความปลอดภัย
+app.use((err, req, res, next) => {
+  if (err.code === 'EBADCSRFTOKEN') {
+    return res.status(403).json({ success: false, message: 'เซสชันไม่ถูกต้องหรือหมดอายุ (CSRF Attack Detected)' })const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`🛡️ ระบบหลังบ้านความปลอดภัยสูงเปิดทำงานที่พอร์ต 300000${PORT}`)) from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+import sqlite3
+
+app = FastAPI(title="Real Wallet API", description="ระบบกระเป๋าเงินใช้งานจริง รองรับฐานข้อมูล")
+
+DB_NAME = "wallet.db"
+
+# --- ส่วนจัดการฐานข้อมูล (Database Management) ---
+def init_db():
+    """สร้างตารางเก็บข้อมูลเงินในระบบ (รันครั้งแรกครั้งเดียว)"""
+    conn = sqlite3.connect(DB_NAME)
+    cursor = conn.cursor()
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS wallets (
+            account_id TEXT PRIMARY KEY,
+            owner_name TEXT NOT NULL,
+            balance REAL DEFAULT 0.0
+        )
+    ''')
+    conn.commit()
+    conn.close()
+
+# เรียกใช้งานเพื่อสร้างฐานข้อมูลทันทีเมื่อเปิดเซิร์ฟเวอร์
+init_db()
+
+# --- โครงสร้างข้อมูลสำหรับรับค่าผ่าน API (Data Schemas) ---
+class CreateWalletRequest(BaseModel):
+    account_id: str
+    owner_name: str
+    initial_balance: float = 0.0
+
+class TransactionRequest(BaseModel):
+    amount: float
+
+# --- ส่วนของช่องทางเชื่อมต่อ API (API Endpoints) ---
+
+@app.post("/wallets/create", summary="1. เปิดบัญชีกระเป๋าเงินใหม่")
+def create_wallet(data: CreateWalletRequest):
+    if data.initial_balance < 0:
+        raise HTTPException(status_code=400, detail="ยอดเงินเริ่มต้นต้องไม่ติดลบ")
+        
+    conn = sqlite3.connect(DB_NAME)
+    cursor = conn.cursor()
+    try:
+        cursor.execute(
+            "INSERT INTO wallets (account_id, owner_name, balance) VALUES (?, ?, ?)",
+            (data.account_id, data.owner_name, data.initial_balance)
+        )
+        conn.commit()
+        return {"status": "success", "message": f"เปิดบัญชี {data.account_id} เรียบร้อย"}
+    except sqlite3.IntegrityError:
+        raise HTTPException(status_code=400, detail="ID บัญชีนี้มีอยู่ในระบบแล้ว")
+    finally:
+        conn.close()
+
+@app.get("/wallets/{account_id}/balance", summary="2. ตรวจสอบยอดเงินคงเหลือ")
+def get_balance(account_id: str):
+    conn = sqlite3.connect(DB_NAME)
+    cursor = conn.cursor()
+    cursor.execute("SELECT owner_name, balance FROM wallets WHERE account_id = ?", (account_id,))
+    row = cursor.fetchone()
+    conn.close()
+    
+    if not row:
+        raise HTTPException(status_code=404, detail="ไม่พบบัญชีนี้ในระบบ")
+        
+    return {"account_id": account_id, "owner_name": row[0], "balance": row[1]}
+
+@app.post("/wallets/{account_id}/deposit", summary="3. ฝากเงินเข้าระบบ")
+def deposit(account_id: str, request: TransactionRequest):
+    if request.amount <= 0:
+        raise HTTPException(status_code=400, detail="จำนวนเงินฝากต้องมากกว่า 0 บาท")
+        
+    conn = sqlite3.connect(DB_NAME)
+    cursor = conn.cursor()
+    
+    # ดึงเงินปัจจุบันมาตรวจสอบก่อนว่ามีบัญชีไหม
+    cursor.execute("SELECT balance FROM wallets WHERE account_id = ?", (account_id,))
+    row = cursor.fetchone()
+    if not row:
+        conn.close()
+        raise HTTPException(status_code=404, detail="ไม่พบบัญชีนี้ในระบบ")
+        
+    # อัปเดตยอดเงินฝากเข้าฐานข้อมูลจริง
+    new_balance = row[0] + request.amount
+    cursor.execute("UPDATE wallets SET balance = ? WHERE account_id = ?", (new_balance, account_id))
+    conn.commit()
+    conn.close()
+    
+    return {"status": "success", "message": f"ฝากเงินสำเร็จ ยอดเงินใหม่คือ {new_balance:,.2f} บาท"}
+
+@app.post("/wallets/{account_id}/withdraw", summary="4. ถอนเงินออกจากระบบ")
+def withdraw(account_id: str, request: TransactionRequest):
+    if request.amount <= 0:
+        raise HTTPException(status_code=400, detail="จำนวนเงินถอนต้องมากกว่า 0 บาท")
+        
+    conn = sqlite3.connect(DB_NAME)
+    cursor = conn.cursor()
+    
+    cursor.execute("SELECT balance FROM wallets WHERE account_id = ?", (account_id,))
+    row = cursor.fetchone()
+    if not row:
+        conn.close()
+        raise HTTPException(status_code=404, detail="ไม่พบบัญชีนี้ในระบบ")
+        
+    current_balance = row[0]
+    
+    # บล็อกระบบความปลอดภัย: ป้องกันไม่ให้เงินในฐานข้อมูลติดลบเด็ดขาด
+    if request.amount > current_balance:
+        conn.close()
+        raise HTTPException(status_code=400, detail=f"เงินไม่พอถอน (มีอยู่จริงแค่ {current_balance:,.2f} บาท)")
+        
+    # หักเงินออกจากฐานข้อมูลจริง
+    new_balance = current_balance - request.amount
+    cursor.execute("UPDATE wallets SET balance = ? WHERE account_id = ?", (new_balance, account_id))
+    conn.commit()
+    conn.close()
+    
+    return {"status": "success", "message": f"ถอนเงินสำเร็จ ยอดเงินคงเหลือคือ {new_balance:,.2f} บาท"}
+
+# สั่งให้ Server ทำงานผ่านโค้ดไพธอนโดยตรง
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)

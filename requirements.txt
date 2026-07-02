@@ -719,4 +719,4 @@ document.getElementById('notify').addEventListener('click', async () => {
 ความปลอดภัยสำคัญ:
 - ใช้ publishable key ใน client เท่านั้น; secret key อยู่ที่ server (.env)
 - ห้าม commit .env หรือคีย์จริงใน repo
-- ก่อนขึ้น production: ใช้ HTTPS, secret manager, ตั้ง REQUIRE_API_KEY=true และทบทวน PCI/PDPA/compliance และ consent/mandate ตามกฎหมาย
+- ก่อนขึ้น production: ใช้ HTTPS, secret manager, ตั้ง REQUIRE_API_KEY=true และทบทวน PCI/PDPA/compliance และ consent/mandate ตามกฎหมายm
