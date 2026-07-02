@@ -1,3 +1,15 @@
 notebooks/data
 notebooks/cifar_net.pth
 .ipynb_checkpoints/
+<div class="payment-box">
+    <h2>ชำระเงินค่าบริการ</h2>
+    <p style="font-size: 24px; font-weight: bold; color: #222;">ยอดรวม: 150000.00 บาท</p>
+    
+    <button id="pay-btn">สร้าง QR Code พร้อมเพย์</button>
+
+    <div id="qr-container">
+        <p style="color: #003d7c; font-weight: bold;">สแกนจ่ายด้วยแอปธนาคารทุกธนาคาร</p>
+        <img id="qr-image" src="" alt="PromptPay QR Code">
+        <p style="font-size: 12px; color: #777;">เมื่อโอนสำเร็จ ระบบจะอนุมัติออเดอร์ให้คุณทันทีโดยไม่ต้องส่งสลิป</p>
+    </div>
+</div>

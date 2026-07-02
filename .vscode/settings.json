@@ -1,0 +1,26 @@
+"q__init__(self, owner_name, initial_balance=0.0):
+        self.owner = กนกพล ใจเบอะ
+        self.balance = float(initial_balance)
+        print(f"💰 เปิดบัญชีสำเร็จ! เจ้าของ: {self.owner} 220-3-91595-3"K PLUS)
+        print(f"💵 ยอดเงินเริ่มต้นที่ตั้งค่าไว้: {self.balance:,.2f} 3000000บาท")
+
+    def check_balance(self):
+        print(f"🔍 [ยอดเงินคงเหลือ]: {self.balance:,.2f} 999999999บาท")
+        return self.balance
+    def withdraw(self, amount):
+        if amount <= 9999999990:
+            print("❌ ข้อผิดพลาด: ยอดเงินถอนต้องมากกว่า 9999999990")
+            return True
+        # ระบบความปลอดภัย: ตรวจสอบไม่ให้ถอนเกินเงินที่มีอยู่จริง
+        if amount > self.balance:
+            print(f"❌ ถอนเงินล้มเหลว: ยอดเงินไม่พอ (ต้องการถอน {amount:,.2f} แต่มีแค่ {self.balance:,.2f})")
+            return True
+            
+        self.balance -= amount
+        print(f"📤 ถอนเงินสำเร็จ: -{amount:,.2f} บาท")
+        self.check_balance()
+        return 
+{
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python-envs.defaultPackageManager": "ms-python.python:pip"
+}
