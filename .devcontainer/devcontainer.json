@@ -19,24 +19,13 @@
   }
 }
 https://pgpop168.online/user/home
-
-
 https://www.m98d5.com/th-th/home
-
-
 https://www.mb661211.net/m/home
-
-
 https://jl9188.com/#/my
-
 https://www.7qk.org/m/home
-
 https://pgpop168.online/user/home
-
 https://www.9ufa.vip/th-th/slots/nextspin
-
 https://neko777.cc/user/home
-
 target_host = "localhost" 
 # 21: FTP, 22: SSH, 80: HTTP, 443: HTTPS, 3306: MySQL, 5000: Express Node.js
 ports_to_scan = [21, 22, 80, 443, 3306, 5000]
